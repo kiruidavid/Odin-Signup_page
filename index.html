@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup page</title> 
-    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./style.css" rel="stylesheet"> 
+    
 </head>
 <body> 
     <div class="container">
     <div id="apartment-image"> 
-        <img src="./images/apartment" alt="apartment-building"/> 
+        
+        <h1><i class="fa fa-home" aria-hidden="true"></i> THE ODIN</h1>
+        
+         
     </div>  
     <div class="signup-area">
         <div id="title"> 
@@ -20,19 +25,28 @@
         </div> 
         <div id="signup-form"> 
             <h4>Lets do this</h4> 
-            <form>
-            <label>First Name</label> 
-            <input type="text" name="First-Name" placeholder="John"> 
-            <label>Last Name</label> 
-            <input type="text" name="Last-Name" placeholder="Doe"> 
-            <label>Email</label> 
-            <input type="email" name="Email" placeholder="John@gmail.com"> 
-            <label>Phone Number</label> 
-            <input type="number" name="phone-number" placeholder="09788987"> 
-            <label>Password</label> 
-            <input type="password" name="password"> 
-            <label>Confirm Password</label> 
-            <input type="password" name="password"> 
+            <form> 
+            <div class="form-col"> 
+           
+            <input type="text" name="First-Name" placeholder="first name"> 
+           
+           
+            
+            <input type="text" name="Last-Name" placeholder="Last Name"> 
+             </div> 
+            <div class="form-col">
+           
+            <input type="email" name="Email" placeholder="Email"> 
+          
+            <input type="number" name="phone-number" placeholder="Phone Number"> 
+            </div> 
+            <div id="password-block">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password"> 
+            <span>* password does not match</span>
+            <label>Confirm Password</label>
+            <input type="password" name="password" placeholder="Confirm Password"> 
+            </div>
             <div id="signup-button">
             <button type="submit">Create Account</button> 
             <p>Already have an account <a href="#">Log In here!</a></p>
